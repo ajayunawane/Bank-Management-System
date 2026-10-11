@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List | BankPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-card customer-list-card">
+
+        <!-- Page Heading -->
+        <div class="form-title">
+            <h1>🏦 BankPro</h1>
+            <h2>Customer List</h2>
+            <p>All registered bank customers</p>
+        </div>
+
+        <!-- Search Box: Top Right -->
+        <div class="customer-toolbar">
+            <input
+                    type="text"
+                    id="customerSearch"
+                    placeholder="🔍 Search customer name, email or contact..."
+                    autocomplete="off"
+            >
+        </div>
+
+        <!-- Customer Table -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+
+                <tbody id="customerTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Message -->
+        <p id="customerMessage"></p>
+
+        <!-- Back Button -->
+        <a href="index.html" class="back-link">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+</div>
+
+<script src="customers.js"></script>
+</body>
+</html>

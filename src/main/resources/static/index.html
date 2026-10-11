@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>BankPro Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="dashboard">
+    <aside class="sidebar">
+        <div class="logo"><h2>🏦 BankPro</h2></div>
+        <nav class="nav">
+            <a href="index.html">📊 Dashboard</a>
+            <a href="customers.html">👥 Customers</a>
+            <a href="accounts.html">🏦 Accounts</a>
+            <a href="register.html">➕ Add Customer</a>
+            <a href="create-account.html">🆕 Create Account</a>
+            <a href="deposit.html">💰 Deposit</a>
+            <a href="withdraw.html">💸 Withdraw</a>
+            <a href="transfer.html">🔄 Transfer</a>
+            <a href="transactions.html">📜 Transactions</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <div class="topbar"><h1>Welcome to BankPro 👋</h1><p>Bank Management System Dashboard</p></div>
+        <div class="cards">
+            <div class="card"><h3>Total Customers</h3><h2 id="totalCustomers">0</h2></div>
+            <div class="card"><h3>Total Accounts</h3><h2 id="totalAccounts">0</h2></div>
+            <div class="card"><h3>Total Balance</h3><h2 id="totalBalance">₹0</h2></div>
+            <div class="card"><h3>Total Transactions</h3><h2 id="totalTransactions">0</h2></div>
+        </div>
+        <h2 style="margin-bottom:15px">Quick Actions</h2>
+        <div class="quick-actions">
+            <button class="action-btn" onclick="location.href='register.html'">👤 Add Customer</button>
+            <button class="action-btn" onclick="location.href='deposit.html'">💰 Deposit</button>
+            <button class="action-btn" onclick="location.href='withdraw.html'">💸 Withdraw</button>
+            <button class="action-btn" onclick="location.href='transfer.html'">🔄 Transfer</button>
+        </div>
+    </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

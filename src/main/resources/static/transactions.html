@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-card customer-list-card">
+        <div class="form-title"><h1>🏦 BankPro</h1>
+            <h2>Transaction History</h2>
+            <p>View account transaction history</p></div>
+        <div class="input-group"><label>Account Number</label><input id="accountNo" type="text"
+                                                                     placeholder="Enter account number"></div>
+        <button class="submit-btn" onclick="loadTransactions()">🔍 Search Transactions</button>
+        <p id="transactionMessage"></p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody id="transactionBody"></tbody>
+            </table>
+        </div>
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+    </div>
+</div>
+<script src="transactions.js"></script>
+</body>
+</html>

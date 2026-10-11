@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fund Transfer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-card">
+        <div class="form-title"><h1>🏦 BankPro</h1>
+            <h2>Fund Transfer</h2>
+            <p>Transfer money from one account to another</p></div>
+        <form id="transferForm">
+            <div class="input-group"><label>Sender Account Number</label><input id="fromAccountNo" type="text" required>
+            </div>
+            <div class="input-group"><label>Receiver Account Number</label><input id="toAccountNo" type="text" required>
+            </div>
+            <div class="input-group"><label>Transfer Amount</label><input id="amount" type="number" min="1" required>
+            </div>
+            <button class="submit-btn" type="submit">💸 Transfer Money</button>
+        </form>
+        <p id="transferMessage"></p><a class="back-link" href="index.html">← Back to Dashboard</a>
+    </div>
+</div>
+<script src="transfer.js"></script>
+</body>
+</html>

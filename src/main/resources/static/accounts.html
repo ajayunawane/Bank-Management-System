@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Accounts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-card customer-list-card">
+        <div class="form-title"><h1>🏦 BankPro</h1>
+            <h2>Account List</h2>
+            <p>All bank accounts</p></div>
+
+        <div class="account-search">
+            <input
+                    type="text"
+                    id="accountSearch"
+                    placeholder="🔍 Search customer name or account number..."
+                    autocomplete="off"
+            >
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Account Number</th>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Account Type</th>
+                    <th>Balance</th>
+                    <th>Branch</th>
+                    <th>IFSC</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="accountTableBody"></tbody>
+            </table>
+        </div>
+        <p id="accountMessage"></p><a href="index.html" class="back-link">← Back to Dashboard</a>
+    </div>
+</div>
+<script src="accounts.js"></script>
+</body>
+</html>
